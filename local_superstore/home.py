@@ -86,24 +86,23 @@ def space(num_lines: int = 1):
         st.write("")
 
 # Function to read Snowflake connection details from TOML file
-def read_snowflake_config():
-    try:
-        with open('snowflake_config.toml', 'rb') as config_file:
-            config = tomli.load(config_file)
-        return config['snowflake']
-    except FileNotFoundError:
-        st.error("Snowflake configuration file not found. Please create a 'snowflake_config.toml' file with your credentials.")
+# def read_snowflake_config():
+#     try:
+#         with open('snowflake_config.toml', 'rb') as config_file:
+#             config = tomli.load(config_file)
+#         return config['snowflake']
+#     except FileNotFoundError:
+#         st.error("Snowflake configuration file not found. Please create a 'snowflake_config.toml' file with your credentials.")
 
 # Function to create a Snowflake connection and cursor
 def create_connection():
-    snowflake_config = read_snowflake_config()
     conn = snowflake.connector.connect(
-        user=snowflake_config['username'],
-        password=snowflake_config['password'],
-        account=snowflake_config['account'],
-        warehouse=snowflake_config['warehouse'],
-        database=snowflake_config['database'],
-        schema=snowflake_config['schema']
+        user='poc',
+        password="Poc@3214",
+        account= 'byzfefs-pd02178',
+        warehouse='COMPUTE_WH',
+        database='STREAM_SUPERSTORE_PKG',
+        schema='SHARED_DATA'
     )
     cur = conn.cursor()
     return conn, cur
