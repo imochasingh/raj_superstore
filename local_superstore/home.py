@@ -2,7 +2,7 @@ import streamlit as st
 import snowflake.connector
 import matplotlib.pyplot as plt
 import pandas as pd
-import tomli
+# import tomli
 from collections import Counter
 import plotly.express as px
 import sql
