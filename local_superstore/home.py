@@ -130,18 +130,18 @@ def filterCountry():
 
 
 
-# Use st.sidebar to add filters in the sidebar
-st.sidebar.header("Filters")
-from datetime import date
-default_start_date = date(2010, 1, 1)
+# # Use st.sidebar to add filters in the sidebar
+# st.sidebar.header("Filters")
+# from datetime import date
+# default_start_date = date(2010, 1, 1)
 
-selected_countries = st.sidebar.multiselect("Select Country", ["All"] + filterCountry())
-start_date = st.sidebar.date_input("Start Date", default_start_date)
-end_date = st.sidebar.date_input("End Date")
+# selected_countries = st.sidebar.multiselect("Select Country", ["All"] + filterCountry())
+# start_date = st.sidebar.date_input("Start Date", default_start_date)
+# end_date = st.sidebar.date_input("End Date")
 
-# Format the selected dates to match your SQL date format
-formatted_start_date = start_date.strftime("%Y-%m-%d")
-formatted_end_date = end_date.strftime("%Y-%m-%d")
+# # Format the selected dates to match your SQL date format
+# formatted_start_date = start_date.strftime("%Y-%m-%d")
+# formatted_end_date = end_date.strftime("%Y-%m-%d")
 
 
 def fetchScore(selected_countries):
