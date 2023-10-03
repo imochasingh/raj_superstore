@@ -180,7 +180,7 @@ def fetchCategorySales():
 
 abc = fetchCategorySales()
 import pygwalker as pyg 
-st.write(type(abc))
+# st.write(type(abc))
 
 adf = pd.DataFrame(abc)
  
