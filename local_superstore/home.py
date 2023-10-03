@@ -46,7 +46,7 @@ st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow
 
 
 
-from streamlit_extras.app_logo import add_logo
+# from streamlit_extras.app_logo import add_logo
 
 # def logo():
 #     add_logo("img/bgimg.png", height=300)
