@@ -13,7 +13,8 @@ st.title("Welcome to the Usage Insights app!")
 st.sidebar.info("Choose a page!")
 st.markdown(
     """
-This app provides insights on a demo Snowflake account usage.
+This is a simple app to understand the feature of streamlit by a superstore dashboard. 
+Data Source - Snowflake 
 
 ### Get started!
 
