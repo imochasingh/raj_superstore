@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Usage Insights app", page_icon="🌀", layout="centered")
 
 
-gui.icon("🌀")
+# gui.icon("🌀")
 
 # Make sure session state is preserved
 for key in st.session_state:
